@@ -1,0 +1,173 @@
+/* floating box style */
+.floating-form { /*contact form wrapper*/
+		max-width: 300px;
+		padding: 30px 30px 10px 30px;
+		border: 1px solid #ddd;
+		right: 10px;
+		position: fixed; /*Form position fixed*/
+		z-index: 10;
+		background-color: #1ab2ee;
+		color:#fcc859;
+		opacity:1;
+		-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+		animation: mymove 5s infinite;
+    }
+	@-webkit-keyframes mymove {
+    30% {border-top-left-radius: 120px;}
+}
+
+@keyframes mymove {
+    30% {border-top-left-radius: 120px;}
+}
+.contact-opener { /*opener button*/
+    position: absolute;
+    left: -189px;
+    transform: rotate(0deg); /* rotate button -90deg */
+    top: 172px;
+    padding: 9px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
+    cursor: pointer;
+    border-radius: 5px 5px 0px 0px;
+	
+	
+}
+.floating-form-heading{
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+	border-bottom-style: dotted;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.floating-form label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+.floating-form label > span{
+    width: 70px;
+    font-weight: 100;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+.floating-form span.required{
+    color:red;
+}
+.floating-form .tel-number-field{
+    width: 40px;
+    text-align: center;
+}
+.floating-form  .long{
+    width: 120px;
+}
+.floating-form input.input-field{
+    width: 68%;
+   
+}
+
+.floating-form input.input-field,
+.floating-form .tel-number-field,
+.floating-form .textarea-field,
+ .floating-form .select-field{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out; 
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+/*     padding: 7px;
+ */    outline: none;
+ color:#000;
+}
+.floating-form .input-field:focus,
+.floating-form .tel-number-field:focus,
+.floating-form .textarea-field:focus,  
+.floating-form .select-field:focus{
+    border: 1px solid #0C0;
+}
+.floating-form .textarea-field{
+    height:100px;
+    width: 68%;
+}
+.floating-form input[type="button"],
+.floating-form input[type="submit"], .contact-opener {
+   /*  -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #216288;
+    border: 1px solid #17445E;*/
+    display: inline-block;
+    cursor: pointer;
+    color: #fe8817;
+    padding: 8px 49px;
+    text-decoration: none;
+    font: 12px;
+}
+.floating-form input[type="button"]:hover,
+.floating-form input[type="submit"]:hover, .contact-opener {
+   /*  background: linear-gradient(to bottom, #f56d23 95%, #0e0d0c 100%);
+    background-color: #0e0e0e; */
+}
+.floating-form .success{
+	background: #D8FFC0;
+	padding: 5px 10px 5px 10px;
+	margin: 0px 0px 5px 0px;
+	border: none;
+	font-weight: bold;
+	color: #2E6800;
+	border-left: 3px solid #2E6800;
+}
+.floating-form .error {
+	background: #FFE8E8;
+	padding: 5px 10px 5px 10px;
+	margin: 0px 0px 5px 0px;
+	border: none;
+	font-weight: bold;
+	color: #FF0000;
+	border-left: 3px solid #FF0000;
+}
+.brace {
+  width: auto;
+  min-width: 35px;
+  padding-bottom: 20px;
+  font-size: 2em;
+  line-height: 2em;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 15px 15px;
+  border: none;
+  background-color: transparent;
+  background-image: 
+    radial-gradient(circle at 0 0, rgba($brace-color,0) 14.5px, $brace-color 15.5px, $brace-color 19.5px, rgba($brace-color,0) 20.5px),
+    radial-gradient(circle at 35px 0, rgba($brace-color,0) 14.5px, $brace-color 15.5px, $brace-color 19.5px, rgba($brace-color,0) 20.5px);
+  background-size: 35px 20px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  text-transform: lowercase;
+  font-style: italic;
+  color: $brace-color;
+  filter: drop-shadow(0 1px 1px rgba(black,.15));
+  overflow: visible;
+}
+.quote-hd-back {
+    padding: 10px;
+	    margin-bottom: 19px;
+    border: 1px solid #eaeaea;
+    border-bottom: transparent;
+    background: linear-gradient(to bottom,#fbfbfb 0,#e5e5e5 120%);
+}
+.quote-head {
+    font-size: 24px;
+    color: rgb(224,156,25);
+    text-align: center;
+}
